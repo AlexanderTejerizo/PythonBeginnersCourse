@@ -1,0 +1,16 @@
+1- git init
+
+2- git remote add origin https://github.com/AlexanderTejerizo/PythonBeginnersCourse
+
+3-
+git config --global user.name "AlexanderTejerizo"
+git config --global user.email "alexat2007@outlook.com"
+
+4- git add .
+
+5- git commit -m "Your commit message"
+
+6- git push origin main
+
+7 -git commit -m "First commit"
+
