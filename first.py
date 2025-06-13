@@ -45,13 +45,21 @@
 
 # print(Division)
 
-# Grocery Store Programming Challenge
-penne = 16.88
-Pasta_Sauce = 6.98
-olives = 16.76
-I_seasoning = 15.26
-baguettes = 3.00
-meatballs = 4.39
+# # Grocery Store Programming Challenge
+# penne = 16.88
+# Pasta_Sauce = 6.98
+# olives = 16.76
+# I_seasoning = 15.26
+# baguettes = 3.00
+# meatballs = 4.39
 
-subtotal = round(penne + Pasta_Sauce + olives + I_seasoning + baguettes + meatballs, 2)
-print(subtotal)
+# subtotal = round(penne + Pasta_Sauce + olives + I_seasoning + baguettes + meatballs, 2)
+# print(subtotal)
+
+# # Strings Exercises
+# to_slice = "Just do it!"
+# print(to_slice[10])   # prints "!"
+# print(to_slice[5:7])  # prints "do"
+# print(to_slice[8:])   # prints "it!"
+# print(to_slice[:4])   # prints "Just"
+# print("Don't " + to_slice[5:])  # prints "Don't do it!"
