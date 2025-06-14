@@ -76,6 +76,13 @@
 # print("*******\n *****\n  ***\n   *") # prints an asterisk triangle
 
 
-# Input Programming challenge: Monty Python.
-name = input("What is your name?")
-print("Your name is " + name + ".")
+# # Input Programming challenge: Monty Python.
+# name = input("What is your name?")
+# quest = input("What is your quest?")
+# color = input("what is your favorite color?")
+# print("So your name is " + name + ", your quest is " + quest + ", and your favorite color is " + color + ".")
+
+
+# int() exercise
+num = int(input("Please type and integer, it will be added with ten."))
+print(num + 10)
