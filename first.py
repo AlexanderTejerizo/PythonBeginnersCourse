@@ -63,3 +63,19 @@
 # print(to_slice[8:])   # prints "it!"
 # print(to_slice[:4])   # prints "Just"
 # print("Don't " + to_slice[5:])  # prints "Don't do it!"
+
+# # type(), str(), and escape sequences exercises
+# ex_b = True
+# ex_i = 4
+# ex_f = 4.123 # variable that has been assigned to a float
+# print(type(ex_f)) # prints the type of float_num
+# print(str(ex_f) + " is a float") # prints "6.7 is a float"
+
+# print("\"Hello, my name is Alex, it's nice to meet you!\"") # prints "Hello, I'm Alex, it's nice to meet you"
+
+# print("*******\n *****\n  ***\n   *") # prints an asterisk triangle
+
+
+# Input Programming challenge: Monty Python.
+name = input("What is your name?")
+print("Your name is " + name + ".")
