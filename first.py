@@ -84,5 +84,56 @@
 
 
 # int() exercise
-num = int(input("Please type and integer, it will be added with ten."))
-print(num + 10)
+# num = int(input("Please type and integer, it will be added with ten."))
+# print(num + 10)
+
+
+# # function with no parameters exercise 
+# def hello_world_printer():
+#     print("hello world")
+
+
+# hello_world_printer()
+
+
+# # function with one parameter exercise
+# def name_printer(user_name):
+#     print(user_name)
+
+
+# name = input("Please enter your name.")
+# name_printer(name)
+
+
+# # Volume of a rectangular prism Programming Challenge
+# length = int(input("Enter an integer that will represent the length of the Rectangle. "))
+# width = int(input("Enter an integer that will represent the width of the rectangle. "))
+# hight = int(input("Enter an integer that will represent the hight of the rectangle. "))
+
+
+# def volume(length, width, hight):
+#     return length * width * hight
+
+
+# print("The volume of the rectangular prism is " + str(volume(length, width, hight)) + " cubic feet")
+
+
+# #Celsius to Fahrenheit Solution with integers
+# celsius = int(input("Please enter an integer that will represent celsius. "))
+
+
+# def fahrenheit(cel):
+#     return (1.8 * cel + 32)
+
+
+# print("The Fahrenheit equivalent of " + str(celsius) + " degrees Celsius is " + str(fahrenheit(celsius)) + ".")
+
+#Celsius to Fahrenheit Solution with round()
+celsius = int(input("Please enter an integer that will represent celsius. "))
+
+
+def fahrenheit(cel):
+    return round(1.8 * cel + 32)
+
+
+print("The Fahrenheit equivalent of " + str(celsius) + " degrees Celsius is " + str(fahrenheit(celsius)) + ".")
