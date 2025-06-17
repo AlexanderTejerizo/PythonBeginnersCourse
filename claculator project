@@ -1,0 +1,18 @@
+def clear_line():
+    print(" \t ")
+
+print("Hello! Welcome to Alexander's integer Calculator.")
+
+calc_q = input("What type of caclulations would you like to do today? \fAddition (Type 1) \fSubtraction (Type 2) \fDivision (Type 3) \fMultiplication (Type 4)\fEnter: ")
+
+if calc_q == "1":
+    clear_line()
+    add_q = input("Enter your numbers. \fEnter: ")
+    if add_q :                                                         #I dont know how to make this statment fitler out inputs that so not have a + in it and conatiain floats.
+        print("Opps! Please enter an addition problem with integers.") #I dont know how to make this statment fitler out inputs that so not have a + in it and conatiain floats.
+
+if add_q != int:
+    print("Opps! Please enter an addition problem with integers.")
+else:
+    print(int(add_q) + 5)
+
