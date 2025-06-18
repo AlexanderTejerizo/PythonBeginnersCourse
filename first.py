@@ -64,12 +64,12 @@
 # print(to_slice[:4])   # prints "Just"
 # print("Don't " + to_slice[5:])  # prints "Don't do it!"
 
-# # type(), str(), and escape sequences exercises
-# ex_b = True
-# ex_i = 4
-# ex_f = 4.123 # variable that has been assigned to a float
-# print(type(ex_f)) # prints the type of float_num
-# print(str(ex_f) + " is a float") # prints "6.7 is a float"
+# type(), str(), and escape sequences exercises
+ex_b = True
+ex_i = 4
+ex_f = 4.123 # variable that has been assigned to a float
+print(type(ex_f)) # prints the type of float_num
+print(str(ex_f) + " is a float") # prints "6.7 is a float"
 
 # print("\"Hello, my name is Alex, it's nice to meet you!\"") # prints "Hello, I'm Alex, it's nice to meet you"
 
@@ -153,10 +153,48 @@
 # # displays the number of miles that the car can travel on a full tank
 # print("The car can travel " + str(miles) + " miles on a full tank.")
 
-def float_holder(number):
-    flo = 21.9 + number
-    return flo
- 
-number = 1
 
-print(float_holder(number))
+# # Grading Programming Challange
+# grade = int(input("What is the Student's grade? \fEnter: "))
+
+# if grade >= 90:
+#     letter = "A"
+# else:
+#     if grade >= 80:
+#         letter = "B"
+#     else: 
+#         if grade >= 70:
+#             letter = "C"
+#         else: 
+#             if grade >= 60:
+#                 letter = "D"
+#             else:
+#                 letter = "F"
+
+# print("The studetnt's grade is " + letter + ".")
+
+
+# #Roman Numeral Programming Challange
+# from random import randint
+# ran_num = randint(1,10)
+
+# if ran_num == 1:
+#     print("I")
+# elif ran_num == 2:
+#     print("II")
+# elif ran_num == 3:
+#     print("III")
+# elif ran_num == 4:
+#     print("IV")
+# elif ran_num == 5:
+#     print("V")
+# elif ran_num == 6:
+#     print("VI")
+# elif ran_num == 7:
+#     print("VII")
+# elif ran_num == 8:
+#     print("VIII")
+# elif ran_num == 9:
+#     print("IX")
+# elif ran_num == 10:
+#     print("X")
