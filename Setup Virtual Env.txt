@@ -1,6 +1,0 @@
-1- Set up virtual environment powershell:
-py -m venv pyCourse
-
-2- Activate virtual environment
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
-.\pyCourse\Scripts\Activate.ps1
