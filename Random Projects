@@ -1,0 +1,25 @@
+# String spacer
+str_one = input("Please type a string.\fEnter: ")
+
+def spacer(string):
+    new_string = ""
+    for i in string:
+        if i.isalnum():
+            spaced = str(i) + " "
+            new_string += spaced
+        else:
+            spaced = str(i) + " "
+            new_string += spaced
+    return new_string
+
+
+print("\f" + spacer(str_one) + "\f ")
+str1_spaced = spacer(str_one)
+q1 = input("Would you like to make the string either:\fBack to normal (type 1)\fCompressed (type 2)\for Keep it this way? (Type 3)\fEnter: ")
+
+if q1 == "1":
+    print("\f" + str_one + "\f")
+elif q1 == "2":
+    print("\f" + str1_spaced.replace(" ", "") + "\f")
+else:
+    print("\f" + str1_spaced + "\f")
