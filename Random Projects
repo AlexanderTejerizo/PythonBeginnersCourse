@@ -24,6 +24,9 @@ def question1(q):
     return q2
 
 
+def try_again():
+        print("\fYou have already chose this option.")
+
 print("\f" + spacer(str_one) + "\f ")
 str1_spaced = spacer(str_one)
 q1 = int(input("Would you like to make the string either:\fBack to normal (type 1)\fCompressed (type 2)\for Keep it this way? (Type 3)\fEnter: "))
@@ -33,11 +36,15 @@ while q1 <= 3:
         q2_val = question1(q1)
         if q2_val == 2:
             q1 = 2
+        elif q2_val == 1:
+            try_again()
         else: q1 = 3
     elif q1 == 2:
         q2_val = question1(q1)
         if q2_val == 1:
             q1 = 1
+        elif q2_val == 2:
+            try_again()
         else: q1 = 3
     else:
         print("Thank you.")
