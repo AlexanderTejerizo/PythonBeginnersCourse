@@ -208,25 +208,25 @@
 #     counter -= 1
 
 
-# # Programming Challenge: Sum of Numbers From A Positive Integer
-# pos_int is a variable which holds a user entered integer.
-pos_int = int(input("Please enter a positive integer."))
-# This variable stores the initial value of pos_int before it is used in the loop so
-# that later it can be used to display pos_int's initial value in the output.
-int_init = pos_int
-# This is a variable which will be used to hold the sum of all the integers from pos_int.
-summed = 0
-# The while loop will run while pos_int's stored integer value is greater than 0
-while pos_int > 0:
-    # This is the equivalent of summed = summed + pos_int
-    # In other words: new value of summed = old value of summed + new value of pos_int
-    summed += pos_int
-    # This will decrement pos_int so that pos_int will eventually equal 0 and the while
-    # loop will stop running its code.
-    pos_int -= 1
+# # # Programming Challenge: Sum of Numbers From A Positive Integer
+# # pos_int is a variable which holds a user entered integer.
+# pos_int = int(input("Please enter a positive integer."))
+# # This variable stores the initial value of pos_int before it is used in the loop so
+# # that later it can be used to display pos_int's initial value in the output.
+# int_init = pos_int
+# # This is a variable which will be used to hold the sum of all the integers from pos_int.
+# summed = 0
+# # The while loop will run while pos_int's stored integer value is greater than 0
+# while pos_int > 0:
+#     # This is the equivalent of summed = summed + pos_int
+#     # In other words: new value of summed = old value of summed + new value of pos_int
+#     summed += pos_int
+#     # This will decrement pos_int so that pos_int will eventually equal 0 and the while
+#     # loop will stop running its code.
+#     pos_int -= 1
  
-print(int_init)  # displays the initial value of pos_int
-print(summed)    # displays the sum of integers from pos_int
+# print(int_init)  # displays the initial value of pos_int
+# print(summed)    # displays the sum of integers from pos_int
 
 
 # # For loop exerscise 1
@@ -362,3 +362,47 @@ print(summed)    # displays the sum of integers from pos_int
 # print(word_counter(str_1))
 # # print(word_counter(str_2))
 # # print(word_counter(str_3))
+
+
+# # introduction to lists exercises
+# list_one = [1, 2.1, False, "Hello", [4,5,6]]
+# list_two = list("Hello")
+
+# print("e" in list_two)
+# print("a" not in list_two)
+
+
+# # indexes and list slicing exercises
+# list_one = [[0,2], [4,6], [8,10], [12,14]]
+# list_two = ["chair", "table", "desk", "lamp", "bed"]
+# list_three = [0.98, 8.76, 6.54, 4.32]
+
+# print(list_one[0])
+# print(list_one[3][1])
+# print(list_two[-5])
+# print("Most people own atleast" + " " + str(list_one[0][1]) + " " + list_two[0] + "s.")
+# print(list_three[1:])
+# print(list_three[1:3])
+# print(list_three[:2])
+
+
+# # del and list methods exercises
+# arctic_animals = ["penguin", "elephant", "polar bear", "walrus", "tiger", "reindeer"]
+# del(arctic_animals[4])
+# arctic_animals.remove("elephant")
+# arctic_animals.append("arctic fox")
+# arctic_animals.insert(2, "snowy owl")
+# arctic_animals.sort()
+# print(arctic_animals)
+# print(arctic_animals.index("reindeer"))
+# print(arctic_animals.pop())
+
+arctic_animals = ["penguin", "elephant", "polar bear", "walrus", "tiger", "reindeer"]
+del arctic_animals[4]
+arctic_animals.remove("elephant")
+arctic_animals.append("arctic fox")
+arctic_animals.insert(2, "snowy owl")  
+arctic_animals.sort()  
+print(arctic_animals)
+print(arctic_animals.index("reindeer"))
+print(arctic_animals.pop())
