@@ -1,0 +1,36 @@
+box = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+rbox = ""
+turn = 1
+
+for i in box:
+    if i % 3 == 0:
+        rbox += str(i) + " \f"
+    else:
+        rbox += str(i) + " "
+
+
+def play(playerinput):
+    global turn, rbox
+    if turn % 2 == 0:
+        mark = "O"
+    else:
+        mark = "X"
+    
+    if playerinput in rbox:
+        rbox = rbox.replace(playerinput, mark)
+        print(rbox)
+    else:
+        print("This choice is either, already taken or invalid.")
+    return mark, rbox
+
+
+while turn <= 9:
+    print(rbox)
+    if turn % 2 == 0:
+        player2 = input("Player two, it is your turn, pick a number.")
+        play(player2)
+        turn += 1
+    else:
+        player1 = input("Player one, it is your turn, pick a number.")
+        play(player1)
+        turn += 1
