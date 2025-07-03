@@ -2,7 +2,7 @@ box = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 rbox = ""
 turn = 1
 
-for i in box:
+for i in box: # This loop turns the list into the grid
     if i % 3 == 0:
         rbox += str(i) + " \f"
     else:
@@ -11,21 +11,21 @@ for i in box:
 
 def play(playerinput):
     global turn, rbox
-    if turn % 2 == 0:
+    if turn % 2 == 0: # Makes sure that player one and two are assigned the right symbol
         mark = "O"
     else:
         mark = "X"
     
-    if playerinput in rbox:
+    if playerinput in rbox: # This edits the grid as the game moves on 
         rbox = rbox.replace(playerinput, mark)
         print(rbox)
     else:
         print("This choice is either, already taken or invalid.")
+        turn -= 1
     return mark, rbox
 
-
+print(rbox)
 while turn <= 9:
-    print(rbox)
     if turn % 2 == 0:
         player2 = input("Player two, it is your turn, pick a number.")
         play(player2)
