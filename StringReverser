@@ -1,158 +1,95 @@
-# # String spacer
-# str_one = input("Please type a string.\fEnter: ")
+# String spacer
+str_one = input("Please type a string.\fEnter: ")
 
 
-# def spacer(string):
-#     new_string = ""
-#     for i in string:
-#         if i.isalnum():
-#             spaced = str(i) + " "
-#             new_string += spaced
-#         else:
-#             spaced = str(i) + " "
-#             new_string += spaced
-#     return new_string
+def spacer(string):
+    new_string = ""
+    for i in string:
+        if i.isalnum():
+            spaced = str(i) + " "
+            new_string += spaced
+        else:
+            spaced = str(i) + " "
+            new_string += spaced
+    return new_string
 
 
-# def string_reverser(string):
-#     letters = ""
-#     for i in range(len(string) -1, -1, -1):
-#         letters += str_one[i]
-#     return letters
+def string_reverser(string):
+    letters = ""
+    for i in range(len(string) -1, -1, -1):
+        letters += str_one[i]
+    return letters
 
 
-# def question1(q):
-#     if q == 1:
-#         print("\f" + str_one + "\f")
-#         q2 = int(input("Would you like to make the string either:\fBack to normal (type 1)\fCompressed (type 2)\fStrectched (type 3)\fReverse it (type 4)\for Keep it this way? (Type 5)\fEnter: "))
-#     elif q == 2:
-#         print("\f" + str1_spaced.replace(" ", "") + "\f")
-#         q2 = int(input("Would you like to make the string either:\fBack to normal (type 1)\fCompressed (type 2)\fStrectched (type 3)\fReverse it (type 4)\for Keep it this way? (Type 5)\fEnter: "))
-#     elif q == 3:
-#         print("\f" + spacer(str_one) + "\f")
-#         q2 = int(input("Would you like to make the string either:\fBack to normal (type 1)\fCompressed (type 2)\fStrectched (type 3)\fReverse it (type 4)\for Keep it this way? (Type 5)\fEnter: "))
-#     elif q == 4:
-#         print("\f" + string_reverser(str_one) + "\f")
-#         q2 = int(input("Would you like to make the string either:\fBack to normal (type 1)\fCompressed (type 2)\fStrectched (type 3)\fReverse it (type 4)\for Keep it this way? (Type 5)\fEnter: "))
-#     return q2
+def question1(q):
+    if q == 1:
+        print("\f" + str_one + "\f")
+        q2 = int(input("Would you like to make the string either:\fBack to normal (type 1)\fCompressed (type 2)\fStrectched (type 3)\fReverse it (type 4)\for Keep it this way? (Type 5)\fEnter: "))
+    elif q == 2:
+        print("\f" + str1_spaced.replace(" ", "") + "\f")
+        q2 = int(input("Would you like to make the string either:\fBack to normal (type 1)\fCompressed (type 2)\fStrectched (type 3)\fReverse it (type 4)\for Keep it this way? (Type 5)\fEnter: "))
+    elif q == 3:
+        print("\f" + spacer(str_one) + "\f")
+        q2 = int(input("Would you like to make the string either:\fBack to normal (type 1)\fCompressed (type 2)\fStrectched (type 3)\fReverse it (type 4)\for Keep it this way? (Type 5)\fEnter: "))
+    elif q == 4:
+        print("\f" + string_reverser(str_one) + "\f")
+        q2 = int(input("Would you like to make the string either:\fBack to normal (type 1)\fCompressed (type 2)\fStrectched (type 3)\fReverse it (type 4)\for Keep it this way? (Type 5)\fEnter: "))
+    return q2
 
 
-# def try_again():
-#         print("\fYou have already chose this option.")
+def try_again():
+        print("\fYou have already chose this option.")
 
 
-# print("\f" + spacer(str_one) + "\f ")
-# str1_spaced = spacer(str_one)
-# q1 = int(input("Would you like to make the string either:\fBack to normal (type 1)\fCompressed (type 2)\fStrectched (type 3)\fReverse it (type 4)\for Keep it this way? (Type 5)\fEnter: "))
+print("\f" + spacer(str_one) + "\f ")
+str1_spaced = spacer(str_one)
+q1 = int(input("Would you like to make the string either:\fBack to normal (type 1)\fCompressed (type 2)\fStrectched (type 3)\fReverse it (type 4)\for Keep it this way? (Type 5)\fEnter: "))
 
-# while q1 <= 5:
-#     if q1 == 1:
-#         q2_val = question1(q1)
-#         if q2_val == 2:
-#             q1 = 2
-#         elif q2_val == 3:
-#             q1 = 3
-#         elif q2_val == 4:
-#             q1 = 4
-#         elif q2_val == 1:
-#             try_again()
-#         else: q1 = 5
-#     elif q1 == 2:
-#         q2_val = question1(q1)
-#         if q2_val == 1:
-#             q1 = 1
-#         elif q2_val == 3:
-#             q1 = 3
-#         elif q2_val == 4:
-#             q1 = 4
-#         elif q2_val == 2:
-#             try_again()
-#         else: q1 = 5
-#     elif q1 == 3:
-#         q2_val = question1(q1)
-#         if q2_val == 1:
-#             q1 = 1
-#         elif q2_val == 2:
-#             q1 = 2
-#         elif q2_val == 4:
-#             q1 = 4
-#         elif q2_val == 3:
-#             try_again()
-#         else: q1 = 5
-#     elif q1 == 4:
-#         q2_val = question1(q1)
-#         if q2_val == 1:
-#             q1 = 1
-#         elif q2_val == 2:
-#             q1 = 2
-#         elif q2_val == 4:
-#             try_again()
-#         elif q2_val == 3:
-#             q1 = 3
-#         else: q1 = 5
-#     else:
-#         print("Thank you.")
-#         break
-
-
-
-
-# TicTacToe
-ttt = "1 2 3\f4 5 6\f7 8 9"
-print(ttt)
-# tttq = int(input("Hello! Welcome to TicTacToe, enter a number corresponding to your mark."))
-turn = 0
-
-
-def player_one(turn):
-    # turn += 1
-    if tttq == 1:
-       print(ttt.replace(ttt[0], "O"))
-    elif tttq == 2:
-       print(ttt.replace(ttt[2], "O"))
-    elif tttq == 3:
-       print(ttt.replace(ttt[4], "O"))
-    elif tttq == 4:
-       print(ttt.replace(ttt[6], "O"))
-    elif tttq == 5:
-       print(ttt.replace(ttt[8], "O"))
-    elif tttq == 6:
-       print(ttt.replace(ttt[10], "O"))
-    elif tttq == 7:
-       print(ttt.replace(ttt[12], "O"))
-    elif tttq == 8:
-       print(ttt.replace(ttt[14], "O"))
-    elif tttq == 9:
-       print(ttt.replace(ttt[16], "O"))
-    
-
-
-def player_two(turn):
-    # turn += 1
-    if tttq == 1:
-       print(ttt.replace(ttt[0], "X"))
-    elif tttq == 2:
-       print(ttt.replace(ttt[2], "X"))
-    elif tttq == 3:
-       print(ttt.replace(ttt[4], "X"))
-    elif tttq == 4:
-       print(ttt.replace(ttt[6], "X"))
-    elif tttq == 5:
-       print(ttt.replace(ttt[8], "X"))
-    elif tttq == 6:
-       print(ttt.replace(ttt[10], "X"))
-    elif tttq == 7:
-       print(ttt.replace(ttt[12], "X"))
-    elif tttq == 8:
-       print(ttt.replace(ttt[14], "X"))
-    elif tttq == 9:
-       print(ttt.replace(ttt[16], "X"))
-
-
-while turn <= 8:
-    tttq = int(input("Hello! Welcome to TicTacToe, enter a number corresponding to your mark."))
-    ttt = player_one(turn)
-    turn += 1
-    tttq = int(input("Hello! Welcome to TicTacToe, enter a number corresponding to your mark."))
-    ttt = player_two(turn)
-    turn += 1
+while q1 <= 5:
+    if q1 == 1:
+        q2_val = question1(q1)
+        if q2_val == 2:
+            q1 = 2
+        elif q2_val == 3:
+            q1 = 3
+        elif q2_val == 4:
+            q1 = 4
+        elif q2_val == 1:
+            try_again()
+        else: q1 = 5
+    elif q1 == 2:
+        q2_val = question1(q1)
+        if q2_val == 1:
+            q1 = 1
+        elif q2_val == 3:
+            q1 = 3
+        elif q2_val == 4:
+            q1 = 4
+        elif q2_val == 2:
+            try_again()
+        else: q1 = 5
+    elif q1 == 3:
+        q2_val = question1(q1)
+        if q2_val == 1:
+            q1 = 1
+        elif q2_val == 2:
+            q1 = 2
+        elif q2_val == 4:
+            q1 = 4
+        elif q2_val == 3:
+            try_again()
+        else: q1 = 5
+    elif q1 == 4:
+        q2_val = question1(q1)
+        if q2_val == 1:
+            q1 = 1
+        elif q2_val == 2:
+            q1 = 2
+        elif q2_val == 4:
+            try_again()
+        elif q2_val == 3:
+            q1 = 3
+        else: q1 = 5
+    else:
+        print("Thank you.")
+        break

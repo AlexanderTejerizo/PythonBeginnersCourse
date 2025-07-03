@@ -24,13 +24,24 @@ def play(playerinput):
         turn -= 1
     return mark, rbox
 
+def win_check():
+    win = [1, 2, 3], [4, 5, 6], [7, 8, 9]
+    return win
+
+print(win_check())
 print(rbox)
-while turn <= 9:
+while turn <= 9: # This is the game loop
     if turn % 2 == 0:
         player2 = input("Player two, it is your turn, pick a number.")
-        play(player2)
-        turn += 1
+        if player2 != "":
+            play(player2)
+            turn += 1
+        else:
+            print("This choice is either, already taken or invalid.")
     else:
         player1 = input("Player one, it is your turn, pick a number.")
-        play(player1)
-        turn += 1
+        if player1 != "":
+            play(player1)
+            turn += 1
+        else:
+            print("This choice is either, already taken or invalid.")
