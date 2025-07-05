@@ -1,40 +1,52 @@
-box = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-rbox = ""
+box = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 turn = 1
 
-for i in box: # This loop turns the list into the grid
-    if i % 3 == 0:
-        rbox += str(i) + " \f"
-    else:
-        rbox += str(i) + " "
+
+def display_box():
+    print(box[0] + " " + box[1] + " " + box[2])
+    print(box[3] + " " + box[4] + " " + box[5])
+    print(box[6] + " " + box[7] + " " + box[8])
 
 
 def play(playerinput):
-    global turn, rbox
-    if turn % 2 == 0: # Makes sure that player one and two are assigned the right symbol
+    global turn, box
+    if turn % 2 == 0: # Makes sure that player one and two are assigned the right symbol.
         mark = "O"
     else:
         mark = "X"
-    
-    if playerinput in rbox: # This edits the grid as the game moves on 
-        rbox = rbox.replace(playerinput, mark)
-        print(rbox)
+    if playerinput in box: # Replaces the numbers in the grid with the mark, and displays the grid.
+        index = box.index(playerinput)
+        box[index] = mark 
+        display_box()
     else:
-        print("This choice is either, already taken or invalid.")
+        print("You have chosen an invalid option.")
         turn -= 1
-    return mark, rbox
+
 
 def win_check():
-    win = [1, 2, 3], [4, 5, 6], [7, 8, 9]
-    return win
+    global box, turn
+    win = [[0, 1, 2], [3, 4, 5], [6, 7, 8], # Rows
+           [0, 3, 6], [1, 4, 7], [2, 5, 8], # Collums
+           [0, 4, 8], [2, 4, 6]]           # Diagonals
+    for a, b, c in win:
+        if box[a] == box[b] == box[c]:
+            if turn % 2 == 0:
+                print("Player two wins!")
+                return True
+            else:
+                print("Player one wins!")
+                return True
+    return False
 
-print(win_check())
-print(rbox)
+
+display_box()
 while turn <= 9: # This is the game loop
     if turn % 2 == 0:
         player2 = input("Player two, it is your turn, pick a number.")
         if player2 != "":
             play(player2)
+            if win_check() == True:
+                break
             turn += 1
         else:
             print("This choice is either, already taken or invalid.")
@@ -42,6 +54,8 @@ while turn <= 9: # This is the game loop
         player1 = input("Player one, it is your turn, pick a number.")
         if player1 != "":
             play(player1)
+            if win_check() == True:
+                break
             turn += 1
         else:
             print("This choice is either, already taken or invalid.")
